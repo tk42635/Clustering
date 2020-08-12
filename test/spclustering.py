@@ -39,7 +39,6 @@ class Spectrum:
         return dis_mat
 
     def cal_weight_mat(self, dis_mat):
-        # 计算相似性矩阵
         if self.criterion == 'gaussian': 
             if self.gamma is None:
                 raise ValueError('gamma is not set')
