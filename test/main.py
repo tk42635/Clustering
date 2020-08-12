@@ -1,6 +1,6 @@
 #coding:utf-8
 import numpy as np
-from test import Spectrum
+from spclustering import Spectrum
 
 data= np.load('D:/action-sets-master/action-sets-master/data/features/' + 'P03_cam01_P03_cereals.npy').T
 sp = Spectrum(n_cluster=5, method='normalized', criterion='k_nearest', gamma=0.1,k=0)
